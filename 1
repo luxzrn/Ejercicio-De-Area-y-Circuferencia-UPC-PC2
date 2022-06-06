@@ -1,0 +1,24 @@
+#include <iostream>
+
+#include <conio.h>
+
+using namespace std;
+using namespace System;
+
+void calcula(double radio, double& area, double& volumen) {
+	area = 4 * 3.1416 * pow(radio,2);
+	volumen = 4* 3.1416 * pow(radio, 3)/3;
+
+}
+
+
+void main() {
+	double r = 100;
+	double a, v;
+	cout << "Ingrese el Radio de la esfera(R<0)";
+	cin >> r;
+	calcula(r, a, v);
+	cout << "Area:" << a << endl;
+	cout << "Volumen:" << v << endl;
+	system("pause>>null");
+}
